@@ -7,12 +7,13 @@ public class exercicio2 {
 		Float aliquota = 0.09F;
 		Float inss = 0.11F;
 		Float outros = 500.30F;
-		
-		
-		//TODO chamda com lambda
-		
+
+		Float resultado = imprimeSalario(salario, s -> s * (1F - aliquota - inss) - outros);
+		System.out.printf("%.2f", resultado);
 	}
 	
-	//TODO Método
+	public static Float imprimeSalario (Float salario, SalarioLiquido sl) {
+		return sl.calculaSalario(salario);
+	}
 	
 }

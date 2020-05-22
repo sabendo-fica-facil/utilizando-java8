@@ -17,8 +17,7 @@ public class AulaStream {
 		imprimir(quantidade);
 		
 		imprimir(palavras.stream().filter(String::isBlank).count());
-		
-		
+	
 	}
 	
 	public static void imprimir (Long str) {
