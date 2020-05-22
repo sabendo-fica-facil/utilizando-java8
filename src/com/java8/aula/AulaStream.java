@@ -3,7 +3,7 @@ package com.java8.aula;
 import java.util.Arrays;
 import java.util.List;
 
-public class Stream {
+public class AulaStream {
 	public static void main (String [] args ) {
 		
 		List<String> palavras = Arrays.asList("asdasd", "qweqwrqwe", "asdasdasdas", "", "asdasdaasdasdas", "asdasda", "");
@@ -17,6 +17,7 @@ public class Stream {
 		imprimir(quantidade);
 		
 		imprimir(palavras.stream().filter(String::isBlank).count());
+		
 		
 	}
 	
